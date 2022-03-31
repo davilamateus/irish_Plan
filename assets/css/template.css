@@ -1,0 +1,505 @@
+body{
+    padding: 0;
+    margin: 0;
+
+}
+
+.container{
+    display: grid;
+    padding: 10px;
+    margin: 0 auto;
+    grid-template-columns: repeat(10, 120px);
+    grid-template-rows: repeat(6,120px);
+    row-gap: 15px;
+    column-gap: 15px;
+    place-content: center;
+    margin-top: 30px;
+} 
+
+.travel--in,
+.to--do--list,
+.radio,
+.euro--today,
+.temperature,
+.logo,
+.time,
+.wind,
+.sky,
+.finance,
+.ads,
+.perfil{
+    border-radius: 9px;
+    background-color: #fff;
+    box-shadow: 0px 2px 20px rgba(22, 22, 22, 0.082);
+    overflow: hidden;
+    
+}
+
+
+
+.notices{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end:7;
+    margin: 7px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+    
+
+
+}
+
+.travel--in{
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 100%;
+    width: 100%;
+
+}
+
+.to--do--list{
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    height: 100%;
+    width: 100%;
+
+
+    
+}
+.radio{
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.euro--today{
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 100%;
+    width: 100%;
+
+}
+
+.temperature--box{
+    grid-column-start: 7;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.logo {
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 100%;
+    width: 100%;
+
+}
+
+.finance{
+    grid-column-start: 7;
+    grid-column-end: 11;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    height: 100%;
+    width: 100%;
+
+
+
+}
+.perfil{
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    height: 100%;
+    width: 100%;
+
+
+
+}
+
+.ads{
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+@media screen and (min-width: 730px) and (max-width: 1290px){
+
+
+    .container{
+        padding: 10px;
+        margin: 0 auto;
+        grid-template-columns: repeat(6, 120px);
+        grid-template-rows: repeat(9,120px);
+        row-gap: 15px;
+        column-gap: 15px;
+        place-content: center;
+        margin-top: 40px;
+
+    } 
+
+
+
+    .notices{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 6;
+        grid-row-end:9;
+        margin: 7px;
+        height: 100%;
+        width: 100%;
+    
+    
+    }
+    .notice--01{
+
+        height: 90%!important ;
+    }
+
+    .notice--02{
+        display: none!important;
+    }
+    
+    .travel--in{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        height: 100%;
+        width: 100%;
+
+    }
+    
+    .to--do--list{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 6;
+        height: 100%;
+        width: 100%;
+    
+
+        
+    }
+    .radio{
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 9;
+        grid-row-end: 10;
+        height: 100%;
+        width: 100%;
+
+    
+    }
+    
+    .euro--today{
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        height: 100%;
+        width: 100%;
+
+    }
+    
+    .temperature--box{
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row-start: 2;
+        grid-row-end: 6;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .temperature{
+        width: 100%!important;
+        height: 100%!important;
+    }
+
+    .temperature--left{
+        width: 100%!important;
+        height: 100%!important;
+        margin-left: -18px; 
+        margin-top: 5px;
+    }
+    .logo {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 9;
+        grid-row-end: 10;
+        height: 100%;
+        width: 100%;
+
+    
+    }
+    
+    .finance{
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row-start: 7;
+        grid-row-end: 9;
+        height: 100%;
+        width: 100%;
+
+    
+    
+    }
+    .perfil{
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row-start: 9;
+        grid-row-end: 10;
+        height: 100%;
+        width: 100%;
+
+    
+    
+    }
+    
+    .ads{
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        height: 100%;
+        width: 100%;
+
+    }
+
+
+}
+
+@media screen and (min-width: 330px) and (max-width: 780px){
+
+    .login--section{
+        display: grid;
+        
+    }
+
+    .login-logo--bg{
+        background-position-y: top;
+    }
+    .login--logo--area{
+        grid-row-start: 2;
+        width: 100%;
+        height: 300px;
+    }
+    
+    .login--enter--area {
+        width: 100%;
+    }
+    .container{
+        display: grid;
+        padding: 10px;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 120px);
+        grid-template-rows: repeat(16,120px);
+        row-gap: 15px;
+        column-gap: 0px;
+        place-content: center;
+        margin-top: 40px;
+
+    } 
+
+
+    .notice--01{
+        display: flex;
+    }
+    .img--notice--01,
+    .notice--box{
+        width: 50%!important;
+    }
+
+
+
+    .notices{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 13;
+        grid-row-end:16;
+        margin: 7px;
+        height: 100%;
+        width: 100%;
+    
+
+    }
+    .notice--box {
+        height: 90%!important;}
+
+
+    .notice--02{
+        display: none!important;
+    }
+    
+    .travel--in{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        height: 100%;
+        width: 100%;
+
+
+    }
+    
+    .to--do--list{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 7;
+        height: 100%;
+        width: 100%;
+
+
+        
+    }
+    .radio{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 12;
+        grid-row-end: 13;
+        height: 100%;
+        width: 100%;
+
+    
+    }
+    
+    .euro--today{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        height: 100%;
+        width: 100%;
+
+    }
+    
+    .temperature--box{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 8;
+        grid-row-end: 10;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: row;
+
+    }
+
+    .temperature{
+        width: 100%!important;
+        height: 100%!important;
+
+    }
+
+    .temperature--left{
+        width: 80%!important;
+        height: 100%!important;
+        margin-left: 0px; 
+        margin-top: 5px;
+
+    }
+    .logo {
+        margin-top: -40px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 16;
+        grid-row-end: 17;
+        height: 100%;
+        width: 100%;
+
+    
+    }
+    
+    .finance{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 10;
+        grid-row-end: 12;
+        height: 100%;
+        width: 100%;
+
+    
+    
+    }
+
+    .porcent{
+        width: 73%!important;
+    }
+    .perfil{
+        margin-top: -40px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 15;
+        grid-row-end: 16;
+        height: 100%;
+        width: 100%;
+
+    
+    }
+    
+    .ads{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 7;
+        grid-row-end: 8;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .login-logo--img{
+        max-width: 40%;
+    }
+
+    .logo img{
+        max-width: 25%;
+    }
+
+    .time--header,
+    .wind--header,
+    .sky--header,
+    .countdown--header,
+    .countdown--itens{
+        margin-left:-10px;
+    }
+    .countdown--days h3, 
+    .countdown--time h3{
+        font-size: 30px!important;
+    }
+    .countdown--days{
+        width: 37px!important;
+    }
+
+    .form--login, 
+    .form--signUp{
+        width: 300px!important;
+
+    }
+}

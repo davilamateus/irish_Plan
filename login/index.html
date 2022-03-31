@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/template.css">
+    <link rel="stylesheet" href="../assets/css/Font-Awesome-6.x/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../assets/css/Font-Awesome-6.x/css/regular.min.css">
+    <link rel="stylesheet" href="../assets/css/Font-Awesome-6.x/css/solid.min.css">
+    <link rel="stylesheet" href="../assets/css/Font-Awesome-6.x/css/light.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap">
+    <link rel="icon" type="image/png" sizes="16x16"  href="../assets/img/favicon-16x16.png">
+    
+    <title>Ireland Dream - Login</title>
+</head>
+<body>
+    <section class="login--section">
+        <div class="login--logo--area">
+            <div class="login-logo--bg">
+                <div class="logo--bg--color"></div>
+            </div>
+            <img class="login-logo--img" src="../assets/img/logo.png" alt="Ireland Dream Logo">
+            </div>
+        <div class="login--enter--area ">
+            <div class="language--box">
+                <div>
+                    <div class="langague--pt--login">
+                        <img src="../assets/img/brasil.png" alt="Português">
+                    </div>
+                    <div class="langague--en--login">
+                        <img src="../assets/img/united-kingdom.png" alt="English">
+                    </div>
+                </div>
+            </div>
+            <header class="login--or--signUp">
+                <h2 id="loginBtn" class="login--select">Login</h2>
+                <h2 id="signUpBtn" >Sign Up</h2>
+            </header>
+            <div class="form--login" >
+                <p class="login--or--signUp--p">Enter with your details:</p>
+                <label>
+                    <h4>Email:</h4>
+                    <input type="text" autocapitalize="none" name="email" id="loginEmail" placeholder="exemple@email.com" value="">
+                </label>
+                <label>
+                    <h4 class="password--title">Password:</h4>
+                    <div class="div--password">
+                        <input type="password" name="password" id="loginPassword" placeholder="******" value="">
+                        <i class="fa-light fa-eye"></i>
+                    </div>
+                    <p class="icorrect--email--password"> Incorrect email or password</p>
+                </label>
+                <label>
+                    <div  class="remember">
+                        <div class="remember--radio--bg">
+                            <div class="remember--radio--circle rememberSelect"></div>
+                        </div>
+                        <p>remember-me</p>
+                    </div>
+                    </label>
+                <label>
+                    <br><button class="login--enter">Enter</button>
+                </label>
+                <div class="center">
+                    <button class="btn--forgot">Forgot your password?</button>
+                </div>
+            </div>
+            <div class="form--signUp display--none" >
+                <p class="login--or--signUp--p">Fill with your details:</p>
+                <label>
+                    <h4>Email:</h4>
+                    <input type="text" autocapitalize="none" name="email" id="signUpEmail" placeholder="exemple@email.com" >
+                </label>
+                <p class="email--registered">Email already registered
+                </p>
+                <div class="sign--names">
+                    <label>
+                        <h4 class="first--name--sign">First Name:</h4>
+                        <input type="text" name="first_name" id="firstName" placeholder="Josh" required value="">
+                    </label>
+                </label>
+                <label>
+                    <h4 class="last--name--sign">Last Name:</h4>
+                    <input type="text" name="last_name" id="lastName" placeholder="Potter" required value="">
+                </label>
+                </div>
+                <label>
+                <label>
+                    <h4 class="password--sign">Password:</h4>
+                    <div class="div--password--sign">
+                        <input type="password" name="password" id="signUpPassword" placeholder="******" required>
+                        <i class="fa-light fa-eye"></i>
+                    </div>
+                    <div class="password--requeri display--none">
+                        <p class="password--requeri--text">Your password must have:</p>
+                        <p class="password--requeri--uppercase">A uppercase letter.</p>
+                        <p class="password--requeri--lowercase">A lowercase letter.</p>
+                        <p class="password--requeri--number">A number.</p>
+                        <p class="password--requeri--special">A special character.</p>
+                        <p class="password--requeri--least">At least 8 characters.</p>
+                    </div>
+                </label>
+                <label>
+                    <h4 class="password--sign--confirm" >Confirm Password:</h4>
+                    <div class="div--password--sign--confirm">
+                        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="******" required value="">
+                        <i class="fa-light fa-eye"></i>
+                    </div>
+                    <div class="password--requeri--confirm display--none">
+                        <p class="password--requeri--confirm-text">Password must be the same.</p>
+                    </div>
+                </label>
+                    <div class="signUp--erro">Please verify:
+                        <p class="signUp--erro--text"></p>
+                    </div>
+                    <br><button class="signUp--enter">Sign Up</button>
+                </label>
+            </div>
+
+
+            <div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <div class="sign--up--sucess">
+        <div class="sign--up--sucess--bg"></div>
+        <div class="sign--up--sucess--box"></div>
+
+    </div>
+    <script src="../assets/js/login.js"></script>
+    <script src="../assets//js/translate.js"></script>
+</body>
+</html>

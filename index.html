@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="manifest" href="./assets/js/manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="/assets/img/icons/icon-512x512.png">
+    <link rel="icon" type="image/png" sizes="16x16"  href="/assets/img/favicon-16x16.png">
+    <link rel="stylesheet" href="assets/css/template.css">
+    <link rel="stylesheet" href="assets/css/Font-Awesome-6.x/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/Font-Awesome-6.x/css/brands.min.css">
+    <link rel="stylesheet" href="assets/css/Font-Awesome-6.x/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/Font-Awesome-6.x/css/regular.min.css">
+    <link rel="stylesheet" href="assets/css/Font-Awesome-6.x/css/solid.min.css">
+    <link rel="stylesheet" href="assets/css/Font-Awesome-6.x/css/light.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,bolder,900" rel="stylesheet">
+    <title>Irish Plan</title>
+</head>
+<body>
+    <div class="language--box">
+        <div>
+            <div class="langague--pt">
+                <img src="assets/img/brasil.png" alt="Português">
+            </div>
+            <div class="langague--en">
+                <img src="assets/img/united-kingdom.png" alt="English">
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container">
+
+            <div class="notices" >
+
+                <div class="notice--01">
+                    <div class="img--notice--01"></div>
+                    <div class="notice--box">
+                        <span class="category--01"></span>
+                        <h3 class="title--notice--01"></h3>
+                        <p class="description--01"></p>
+                        <button  class="notice--view--more--01">View more</button>                      
+                    </div>
+                </div>
+                <div class="notice--02">
+                    <div class="img--notice--02"></div>
+                    <div class="notice--box">
+                        <span class="category--02"></span>
+                        <h3 class="title--notice--02"></h3>
+                        <p class="description--02"></p>
+                        <button class="notice--view--more--02">View more</button>
+                    </div>
+
+                </div>
+                <div class="notice--pages">
+                    <button class="notice--back"><i class="fa-light fa-chevron-left"></i> <p>back</p> </button>
+                    <button class="notice--next"> <p>next </p><i class="fa-light fa-chevron-right"></i></button>
+                </div>
+        </div>
+        <div class="notice--view">
+            <div class="notice--view--bg"></div>
+            <div class="notice--view--box">
+                <div class="notice--view--topo"></div>
+                <div class="notice--view--down">
+                    <div class="notice--view--date--category">
+                        <div class="notice--view--date"></div>
+                        <div class="notice--view--category"></div>
+                    </div>
+                    <h2 class="notice--view--title"></h2>
+                    <p class="notice--view--description"></p>
+                </div>
+            </div>
+        </div>
+            <div class="travel--in">
+                <div class="countdown--box">
+                    <div class="countdown--header">
+                        <span class="countdown--icon">
+                            <i class="fa-light fa-calendar"></i>                                        </span>
+                        <h3>Countdown</h3></span>
+                    </div>
+                    <div class="countdown--itens">
+                        <div class="countdown--days">
+                            <h3 ><img class="loading" src="assets/img/loading.gif"></h3>
+                            <span>days</span>
+                        </div>
+                        <div class="countdown--time">
+                            <h3 ><img class="loading" src="assets/img/loading.gif"></h3>
+                            <span>hours</span>
+                        </div>
+                        <div class="countdown--minutes--secontes">
+                            <div class="countdown--minutes">
+                                <h3 ><img class="loading" src="assets/img/loading.gif"></h3>
+                                <span>min</span>
+                            </div>
+                            <div class="countdown--secontes">
+                                <h3 ><img class="loading" src="assets/img/loading.gif"></h3>
+                                <span>sec</span>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="to--do--list">
+                <div class="to--do--list--title">
+                    <div  class="to--do--list--header"> 
+                        <i class="fa-light fa-check"></i>                         
+                        <h3>To do list</h3>
+                    </div>
+                    <button><img class="btn--options" src="assets/img/btnoptions.svg" ></button>
+                </div>
+                <div class="to--do--list--percent">
+                    <p class="to--do--list--percent--text"></p>
+                    <div class="to--do--list--percent--bg"></div>
+                    <div class="to--do--list--percent--row"></div>
+                </div>
+                <div class="to--do--list--itens"></div>
+                
+        
+            </div>
+        
+            <div class="to--do--list--add">
+                <div class="to--do--list--add--bg"></div>
+                <div class="to--do--list--add--box">
+                    <div class="to--do--list--add--header">
+                        <h2>Add To do list</h2>
+                        <div class="to--do-list--add--close">
+                            <img class="close--btn" src="assets/img/close.svg" alt="Close">
+                        </div>
+                    </div>
+                    <div class="to--do--list--input--box">
+                        <span>Description</span>
+                        <input type="text" name="to--do--list--title" id="to--do--list--titleAdd" placeholder="Fill a title..." value="">
+
+                    </div>
+
+                    <button id="add--to--do--btn">Save to do list </button>
+                </div>
+            </div>            
+            <div class="radio">
+                <div class="radio--option--list">
+                    <div class="radio--option--list--radios"></div>
+                </div>
+                <div class="player--radio"> 
+                    <div> <img class="radio--img" src=""></div>
+                    <div class="radio--container">
+
+                       <div class="radio--control">
+                           <audio  class="radio--src" controls   src=""></audio>
+                           <a class="radio--option"><i class="fa-light fa-bars"></i></a>
+                           <a class="radio--back"><i class="fa-light fa-backward-step"></i></a>
+                           <a class="radio--stop"><i class="fa-light fa-circle-pause"></i></a>
+                           <a class="radio--play"><i class="fa-light fa-circle-play"></i></a>
+                           <a class="radio--next"><i class="fa-light fa-forward-step"></i></a>
+                           <a class="radio--volume"><i class="fa-light fa-volume"></i></a>
+                           
+                        </div>
+                        <div class="volume--box">
+                            <input  type="range" min="1" max="100" value="50" class="radio--slider">
+                        </div>
+                       <div>
+                           <span class="radio--title"></span>
+                       </div>
+                       
+                   </div>
+               </div>
+            </div>
+            <div class="euro--today">
+                <div class="euro--up">
+                    <div class="euro--header">
+                        <i class="fa-light fa-euro-sign"></i>                       
+                         <h3>Euro Today</h3>
+                    </div>
+                    <h3 class="euro--value">$0</h3>
+                </div>
+                <div class="euro--absolute">
+                    <div class="euro--status">
+                        <img src="">
+                        <span>0%</span>
+                    </div>
+                    <button class="view--more--euro"><img src="assets/img/btnoptions.svg"></button>
+                </div>
+                <div class="euro--down">
+                    <div class="euro--bg" width="200px"  height = "200px" >
+                        <canvas id="euro--today--Chart" width="200" height="40" ></canvas>
+                    </div>
+                    </div>
+                </div>
+                <div class="euro--view">
+                    <div class="euro--view--bg"></div>
+                    <div class="euro--view--box">
+                        <div class="euro--view--header">
+                            <div class="euro--view--more--title">
+                                <h2>Euro Today</h2>
+                            </div>
+
+                            <div class="close--view--euro"><img class="close--btn"src="assets/img/close.svg"></div>
+                        </div>
+                        <div class="euro--view--more--value--taxa">
+                            <h2 class="euro--view--more--value"></h2>
+                            <div class="euro--view--more--taxa">
+                                <img src="">
+                                <h2></h2>
+                            </div>
+                        </div>
+                        <div class="euro--view--charts">
+                            <canvas id="euro--view--charts"></canvas>
+                        </div>
+                        <div class="euro--view--taxas">
+                            <div class="euro--view--paypal"
+                                ><img src="assets/img/paypal.svg">
+                                <span class="euro--view--paypal--tax--fixed">$0.35</span>
+                                <span class="euro--view--paypal--tax">$0.35</span>
+                            </div>
+                            <div class="euro--view--remesa">
+                                <img src="assets/img/remesa.svg">
+                                <span class="euro--view--remesa--tax--fixed">$0.35</span>
+                                <span class="euro--view--remesa--tax">$0.35</span>
+                            </div>
+                            <div class="euro--view--wise">
+                                <img src="assets/img/wise.svg">
+                                <span class="euro--view--wise--tax--fixed">$0.35</span>
+                                <span class="euro--view--wise--tax">$0.35</span>
+                            </div>
+
+                        </div>
+    
+                    </div>
+
+                </div>
+            <div class="temperature--box">
+                <div class="temperature">
+                    <div class="temperature--header ">
+                        <i class="fa-light fa-temperature-empty"></i>                   
+                        <h3>Temperature</h3>
+                    </div>
+                    <div class="temperature--value--box">
+                        <span class="temperature--value"><img class="loading" src="assets/img/loading.gif"></span>
+                    </div>
+                    <div class="temperature--city--box">
+                        <p class="temperature--city">City</p>
+                    </div>
+                </div>
+                <div class="temperature--left">
+                    <div class="time">
+                        <div class="time--header">
+                            <i class="fa-light fa-clock"></i>                    
+                            <h4>Time</h4>
+                        </div>
+                        <div class="time--number"><img class="loading" src="assets/img/loading.gif"></div>
+                    </div>
+                    <div class="wind">
+                        <div class="wind--header">
+                            <i class="fa-light fa-wind"></i>                    
+                            <h4>Wind</h4>
+                        </div>
+                        <div class="weather--wind"><img class="loading" src="assets/img/loading.gif"></div>
+                    </div>
+                    <div class="sky">
+                        <div class="sky--header">
+                            <i class="fa-light fa-cloud-moon"></i>                    
+                            <h4>Sky</h4>
+                        </div>
+                        <div class="weather--sky"><img class="loading" src="assets/img/loading.gif"></div>
+        
+                    </div>
+
+                </div>
+            </div>
+            <div class="logo"><img src="assets/img/logo.png"></div>
+            <div class="finance">
+                <div class="finance--title">
+                    <div class="finance--header" >
+                        <i class="fa-light fa-piggy-bank"></i>                        
+                        <h3>Finance</h3>
+                    </div>
+                    <button class="add--finance"><img class="btn--options" src="assets/img/btnoptions.svg" ></button>
+                </div>
+                <div class="finance--dowm">
+                    <div class="finance--rigth">
+                        <div  class="view--finance--total">
+                            <h2>Total:</h2>
+                            <span>$0</span>
+                        </div>
+                        <div class="view--finance">
+                            <div>
+                                <h2 class="view--finance--falt--title">Falt:</h2>
+                                <span class="view--finance--missing">$0</span>
+                            </div>
+                            <div>
+                                <h2 class="view--finance--planing--title">Planing:</h2>
+                                <span class="view--finance--meta">$0</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="porcentBg">
+                        <div class="porcent">
+                            <canvas id="financeChart" width="400" height="400"></canvas>
+                        </div>
+                        <div class="porcentNumber"></div>
+                    </div>
+                </div>
+            <div class="finance--add">
+                <div class="finance--add--bg"></div>
+                <div class="finance--add--box">
+                    <div class="finance--add--container">
+                        <div class="finance--add--header">
+                            <h2>My Finance</h2>
+                            <div class="finance--add--close">
+                                <img class="close--btn"src="assets/img/close.svg" alt="Close">
+                            </div>
+                        </div>
+                        <div class="finance--list"></div>
+                        <div class="finance--total--missing">
+                            <div class="finance--missing">
+                                <h3>Falt</h3>
+                                <span class="finance--missing--value"></span>
+                            </div>
+                            <div class="finance--total">
+                                <h3>Total</h3>
+                                <span class="finance--total--value"></span>
+                            </div>
+                            <div class="finance--meta">
+                                <h3>Planning</h3>
+                                <span class="finance--meta--value"></span>
+                            </div>
+                            </div>
+                                <button class="btn--add--new--finance">Add Finance</button>
+        
+                      </div>
+                    </div>
+                    <div class="finance--edit--add--container">
+                        <div class="finance--add--inputs">
+                            <h2>Add finance</h2>
+                            <div class="finance--add--close2">
+                                <img class="close--btn"src="assets/img/close.svg" alt="Close">
+                            </div>
+                        </div>
+                            <span class="finance--erro"></span>
+                            <div class="finance--add--inputs--box">
+                            <span>Description:</span>
+                            <input type="text" name="finance--input--text" id="finance--input--text" placeholder="Buy my car..">
+                            <span class="finance--input--value">Value:</span>
+                            <input type="number" name="finance--input--value" id="finance--input--value" placeholder="$1923">
+                        </div>
+                        <div class="finance--add--btns">
+                            <button class="finance--add--credit">Save finance</button>
+                        </div>
+                        <div class="finance--edit--btns">
+                            <button class="finance--add--salve">Salve</button>
+                            <button class="finance--add--delete">Delete</button>
+                        </div>
+            
+                        </div>
+                    </div>
+            </div>
+            <div class="perfil">
+                <div class="perfil--img"></div>
+                <div class="perfil--medium">
+                    <h2>Hello </br><span class="user--name"><img class="loading" src="assets/img/loading.gif"></span></h2>
+                    <div>
+                        <i class="fa-light fa-arrow-right-from-bracket"></i>
+                        <span class="logoff">Logoff</span>
+                    </div>
+                </div>
+                <div class="perfil--right">
+                    <button><img class="btn--options" src="assets/img/btnoptions.svg" ></button>
+
+                </div>
+                </div>
+            <div class="ads"><a href="https://sedacollegeonline.com/seda-college-online-google-ads/?gclid=CjwKCAjwxOCRBhA8EiwA0X8hi3YkDgbgMFK_2LpqTthqJDHsrfP6YoNuUItz1jHujbwbO61PU2rslBoCgBMQAvD_BwE"></a></div>
+            <div class="edit--user">
+                <div class="edit--user--bg"></div>
+                <div class="edit--user--box">
+                    <div class="edit--user--header">
+                        <h2>Edit User</h2>
+                        <img class="close--btn"src="assets/img/close.svg" alt="Close">
+                    </div>
+                <div class="edit--user--photo--name">
+                    <div class="edit--user--photo">
+                        <input type="file" name="photo--edit" id="photo--edit">
+                        <i class="fa-light fa-camera"></i></div>
+                    <h2 class="edit--user--name"></h2>
+                </div>
+                <div class="edit--user--options">
+                    <div class="edit--user--email">
+                        <div class="edit--user--left">
+                            <i class="fa-light fa-at"></i>
+                            <span>Email:</span>
+                            <input type="email" name="email--edit" id="email--edit">
+                        </div>
+                    </div>
+                    <div class="edit--user--planning">
+                        <div class="edit--user--left">
+                            <i class="fa-light fa-bullseye-arrow"></i>
+                            <span>Planning:</span>
+                            <input type="number" name="planning--edit" id="planning--edit">
+                        </div>
+                    </div>
+                    <div class="edit--user--city">
+                        <div class="edit--user--left">
+                            <i class="fa-light fa-earth-americas"></i>
+                            <span>City:</span>
+                            <select name="select" id="city--edit">
+                                <option value="Galway">Galway</option>
+                                <option value="Dublin" selected>Dublin</option>
+                                <option value="Cork">Cork</option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="edit--user--travel--in">
+                        <div class="edit--user--left">
+                            <i class="fa-light fa-plane"></i>
+                            <span>Travel in:</span>
+                            <input type="datetime-local" name="travel--in--edit" id="travel--in--edit">
+                        </div>
+                    </div>
+                    <div class="edit--user--edit--password">
+                        <div class="edit--user--left">
+                            <i class="fa-light fa-key"></i>
+                            <span>Password:</span>
+                            <span class="passwordInput">******</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="edit--user--save">Save</button>
+                
+                </div>
+                <div class="change--password--box">
+                    <div class="change--password--header">
+                        <h2>Change Password</h2>
+                        <img class="close--btn"src="assets/img/close.svg" alt="Close">
+    
+                    </div>
+                    
+                    <div class="change--password--current">
+                        <span>Current password:</span>
+                        <input type="password" name="change--current--password" id="change--current--password" placeholder="********">
+                    </div>
+                    <div class="change--password--wrong">Wrong Passowrd.</div>
+                    <div class="change--password--new">
+                        <span>New password:</span>
+                        <div>
+                            <input type="password" name="change--new--password" id="change--new--password" placeholder="********">
+                            <i class="fa-light fa-eye"></i>
+                        </div>
+                        <div class="password--requeri display--none">
+                            <p class="password--requeri--text">Your password must have:</p>
+                            <p class="password--requeri--uppercase">A uppercase letter.</p>
+                            <p class="password--requeri--lowercase">A lowercase letter.</p>
+                            <p class="password--requeri--number">A number.</p>
+                            <p class="password--requeri--special">A special character.</p>
+                            <p class="password--requeri--least">At least 8 characters.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="change--password--new--confirm">
+                        <span>Confirm new password:</span>
+                        <div>
+                            <input type="password" name="change--new--confirm--password" id="change--new--confirm--password" placeholder="********">
+                            <i class="fa-light fa-eye"></i>
+                        </div>
+                        <div class="password--requeri--confirm display--none">
+                            <p class="password--requeri--confirm-text">Password must be the same.</p>
+                        </div>
+                    </div>
+                    <button class="save--new--password">Save password</button>
+                </div>
+                </div>
+        </div>
+        </div>
+        <div class="page--loading">
+            <div class="page--loading--logo"> <img src="assets/img/logo.png"></div>
+            <div class="page--loading--gif"> <img src="assets/img/loading.gif"></div>
+        </div>
+    </section>
+
+    
+<script>
+    window.addEventListener('load', () => {
+      registerSW();
+    });
+ 
+    // Register the Service Worker
+    async function registerSW() {
+      if ('serviceWorker' in navigator) {
+        try {
+          await navigator
+                .serviceWorker
+                .register('serviceworker.js');
+        }
+        catch (e) {
+          console.log('SW registration failed');
+        }
+      }
+    }
+ </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <script src="assets/js/verificUser.js"></script>
+    <script src="assets/js/travelIn.js"></script>
+    <script src="assets/js/euro.js"></script>
+    <script src="assets/js/toDoList.js"></script>
+    <script src="assets/js/getWeather.js"></script>
+    <script src="assets/js/finance.js"></script>
+    <script src="assets/js/ads.js"></script>
+    <script src="assets/js/notice.js"></script>
+    <script src="assets/js/radio.js"></script>
+    <script src="assets/js/perfil.js"></script>
+    <script src="assets/js/editUser.js"></script>
+    <script src="assets/js/translate.js"></script>
+
+</body>
+</html>
